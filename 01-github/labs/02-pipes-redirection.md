@@ -26,7 +26,7 @@
 ### Why i skipped these
 didn't touch `2>&1` or `tee` today - figured i'll actually get why they matter once i'm writing scripts and need to combine outputs right now it would've just been memorizing syntax
 
-Also pushing `awk`, `sort`, `uniq`, `tr`, `xargs`, `cut` to sunday so i wanted to give them proper time instead of rushing at the end of a long day
+also pushing `awk`, `sort`, `uniq`, `tr`, `xargs`, `cut` to sunday so i wanted to give them proper time instead of rushing at the end of a long day
 
 ### Text-processing topics
 
