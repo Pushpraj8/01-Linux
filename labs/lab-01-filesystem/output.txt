@@ -1,6 +1,4 @@
-cd ~/lab-practice
-
-{
+cd ~/lab-practice && {
   echo "=== pwd ==="
   pwd
   echo ""
@@ -12,6 +10,5 @@ cd ~/lab-practice
   echo ""
   echo "=== globbing ==="
   ls projects/dev/*.log
-} > ~/output.txt
+} > ~/online-presence/01-Linux/labs/lab-01-filesystem/output.txto
 
-cat ~/output.txt
