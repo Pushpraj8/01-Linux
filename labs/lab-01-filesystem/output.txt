@@ -1,14 +1,32 @@
-cd ~/lab-practice && {
-  echo "=== pwd ==="
-  pwd
-  echo ""
-  echo "=== ls -la ==="
-  ls -la
-  echo ""
-  echo "=== ls -R ==="
-  ls -R
-  echo ""
-  echo "=== globbing ==="
-  ls projects/dev/*.log
-} > ~/online-presence/01-Linux/labs/lab-01-filesystem/output.txto
+=== pwd ===
+/home/pushpraj/lab-practice
 
+=== ls -la ===
+total 12
+drwxrwxr-x  3 pushpraj pushpraj 4096 Sep 12 09:35 .
+drwxr-x--- 21 pushpraj pushpraj 4096 Sep 13 20:56 ..
+drwxrwxr-x  4 pushpraj pushpraj 4096 Sep 12 09:52 projects
+
+=== ls -R ===
+.:
+projects
+
+./projects:
+dev
+test
+
+./projects/dev:
+error.log
+log1.log
+log2.log
+main.py
+notes.txt
+
+./projects/test:
+main.py
+test_old.py
+
+=== globbing ===
+projects/dev/error.log
+projects/dev/log1.log
+projects/dev/log2.log
