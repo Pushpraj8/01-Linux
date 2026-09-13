@@ -1,0 +1,32 @@
+=== sort ===
+apple
+apple
+apple
+banana
+banana
+cherry
+
+=== uniq -c ===
+      3 apple
+      2 banana
+      1 cherry
+
+=== grep error ===
+error: file not found
+error: timeout
+
+=== grep -v error ===
+info: starting
+warning: low disk
+info: done
+
+=== redirection ===
+new line
+another line
+
+=== stderr to file ===
+ls: cannot access '/nonexistent': No such file or directory
+ls: cannot access '/nonexistent': No such file or directory
+
+=== exit status ===
+exit code: 2
