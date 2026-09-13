@@ -1,0 +1,17 @@
+cd ~/lab-practice
+
+{
+  echo "=== pwd ==="
+  pwd
+  echo ""
+  echo "=== ls -la ==="
+  ls -la
+  echo ""
+  echo "=== ls -R ==="
+  ls -R
+  echo ""
+  echo "=== globbing ==="
+  ls projects/dev/*.log
+} > ~/output.txt
+
+cat ~/output.txt
