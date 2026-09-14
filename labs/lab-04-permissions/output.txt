@@ -1,0 +1,23 @@
+=== initial ===
+total 12
+drwxrwxr-x  3 pushpraj pushpraj 4096 Sep 14 15:36 .
+drwxr-x--- 22 pushpraj pushpraj 4096 Sep 14 15:37 ..
+drwx------  2 pushpraj pushpraj 4096 Sep 14 15:36 testdir
+-rw-r--r--  1 pushpraj 1001        0 Sep 14 15:36 testfile.txt
+
+=== chmod 755 ===
+-rwxr-xr-x 1 pushpraj 1001 0 Sep 14 15:36 testfile.txt
+
+=== chmod 644 ===
+-rw-r--r-- 1 pushpraj 1001 0 Sep 14 15:36 testfile.txt
+
+=== chmod u+x ===
+-rwxr--r-- 1 pushpraj 1001 0 Sep 14 15:36 testfile.txt
+
+=== directory 700 ===
+drwx------ 2 pushpraj pushpraj 4096 Sep 14 15:36 testdir
+drwx------ 2 pushpraj pushpraj 4096 Sep 14 15:36 testdir
+
+=== chown ===
+-rwxr--r-- 1 root root 0 Sep 14 15:36 testfile.txt
+-rwxr--r-- 1 pushpraj pushpraj 0 Sep 14 15:36 testfile.txt
