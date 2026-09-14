@@ -1,0 +1,22 @@
+=== whoami ===
+pushpraj
+
+=== id ===
+uid=1000(pushpraj) gid=1000(pushpraj) groups=1000(pushpraj),4(adm),24(cdrom),27(sudo),30(dip),46(plugdev),100(users),111(lpadmin),114(lxd)
+
+=== groups ===
+pushpraj adm cdrom sudo dip plugdev users lpadmin lxd
+
+=== /etc/passwd sample ===
+root:x:0:0:root:/root:/bin/bash
+daemon:x:1:1:daemon:/usr/sbin:/usr/sbin/nologin
+bin:x:2:2:bin:/bin:/usr/sbin/nologin
+sys:x:3:3:sys:/dev:/usr/sbin/nologin
+sync:x:4:65534:sync:/bin:/bin/sync
+
+=== /etc/group sample ===
+root:x:0:
+daemon:x:1:
+bin:x:2:
+sys:x:3:
+adm:x:4:syslog,pushpraj
