@@ -1,21 +1,24 @@
-# Commands — Lab 05 Processes
+# Commands — Lab 05
 
-## Bash PID
+## bash pid
 echo $$
 
-## All processes
+## all processes
 ps aux | head -5
 ps aux | head -20
 
-## My processes
+## my processes
 ps aux | grep pushpraj
 
-## Process tree
+## find bash
+ps aux | grep bash
+
+## process tree
 pstree -p
 
-## PPID check
-echo $$
-ps -o pid,ppid,cmd -p $$
-
-## Process states
+## check states
 ps -o pid,ppid,stat,cmd
+
+## sleep in bg
+sleep 120 &
+ps

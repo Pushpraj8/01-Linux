@@ -3,17 +3,17 @@
 
 === ps aux | head -5 ===
 USER         PID %CPU %MEM    VSZ   RSS TTY      STAT START   TIME COMMAND
-root           1  1.0  0.1  25932 16548 ?        Ss   21:00   0:02 /usr/lib/systemd/systemd --switched-root --system --deserialize=52 splash
+root           1  0.5  0.1  25932 16548 ?        Ss   21:00   0:02 /usr/lib/systemd/systemd --switched-root --system --deserialize=52 splash
 root           2  0.0  0.0      0     0 ?        S    21:00   0:00 [kthreadd]
 root           3  0.0  0.0      0     0 ?        S    21:00   0:00 [pool_workqueue_release]
 root           4  0.0  0.0      0     0 ?        I<   21:00   0:00 [kworker/R-rcu_gp]
 
 === ps aux | grep pushpraj | head -5 ===
 avahi       1346  0.0  0.0   6748  4796 ?        Ss   21:00   0:00 avahi-daemon: running [pushpraj-Latitude-5411.local]
-pushpraj    3138  0.8  0.0  23808 15084 ?        Ss   21:00   0:02 /usr/lib/systemd/systemd --user
+pushpraj    3138  0.3  0.0  23808 15088 ?        Ss   21:00   0:02 /usr/lib/systemd/systemd --user
 pushpraj    3149  0.0  0.0  23460  4180 ?        S    21:00   0:00 (sd-pam)
-pushpraj    3170  0.6  0.0  10124  7384 ?        Ss   21:00   0:01 /usr/bin/dbus-daemon --session --address=systemd: --nofork --nopidfile --systemd-activation --syslog-only
-pushpraj    3171  0.0  0.0 114700 13368 ?        S<sl 21:00   0:00 /usr/bin/pipewire
+pushpraj    3170  0.3  0.0  10124  7384 ?        Ss   21:00   0:01 /usr/bin/dbus-daemon --session --address=systemd: --nofork --nopidfile --systemd-activation --syslog-only
+pushpraj    3171  0.0  0.0 114700 13088 ?        S<sl 21:00   0:00 /usr/bin/pipewire
 
 === pstree -p | head -10 ===
 systemd(1)-+-ModemManager(1628)-+-{ModemManager}(1650)
