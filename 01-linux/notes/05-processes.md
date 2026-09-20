@@ -69,3 +69,31 @@ zombie process means - the process is dead but its parent has not read its exit 
 - /proc/<PID>
 - nohup, disown, screen/tmux
 - production scenario
+
+# Day 5 - Processes (Part 2)
+
+## pstree -p
+saw parent child hierarchy practically. whatever command runs inside bash becomes its child. tree shows who is whose child.
+
+## top
+- shows cpu usage
+- memory usage also
+- shows who is the top resource consumer
+- load average also shows
+- press q to exit
+
+## pgrep
+pgrep -a chrome shows pid along with command details. not just pid, full command line shows.
+
+## pidof
+pidof chrome gives pids of matching processes. simple and short.
+
+## background process
+ran sleep 300 &. got job number [1] and a pid also. understood both are different. [1] is bash's own number, pid is os's number. did not go deep into jobs for now, will do later.
+
+## signals
+kill command sends signal to process.
+- SIGTERM = -15 = graceful. process gets time to cleanup
+- SIGKILL = -9 = forceful. kills immediately, no cleanup chance
+- try -15 first, only use -9 if that does not work
+- -9 should not be first choice
