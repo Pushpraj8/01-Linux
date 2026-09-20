@@ -11,3 +11,11 @@ ran sleep 120 & and checked with ps. it was in S state because it was waiting fo
 
 ## What I learned
 every command creates a process when it runs. not just applications. PID is unique, PPID is parent's. bash is my parent. PID 1 is systemd. states are R running, S sleeping, D io wait, Z zombie. for zombie investigate parent not zombie. [kthreadd] in brackets means kernel threads.
+
+## Part 2 — update
+
+today looked at pstree top pgrep pidof and signals. `pstree -p` shows the tree structure. ran `top` which shows cpu memory and load. `pgrep -a chrome` shows pid with command details. `pidof chrome` gives only pid.
+
+also looked at background process. ran `sleep 300 &`. got job number `[1]` and a pid too. understood both are different. did not go deep into jobs for now.
+
+in signals looked at kill. SIGTERM `-15` is graceful, SIGKILL `-9` is forceful. should try -15 first, only use -9 if that does not work. -9 should not be the first choice.

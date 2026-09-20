@@ -1,0 +1,27 @@
+=== pstree -p | head -10 ===
+systemd(1)-+-ModemManager(1715)-+-{ModemManager}(1738)
+           |                    |-{ModemManager}(1741)
+           |                    `-{ModemManager}(1744)
+           |-NetworkManager(1574)-+-{NetworkManager}(1641)
+           |                      |-{NetworkManager}(1643)
+           |                      `-{NetworkManager}(1645)
+           |-accounts-daemon(1449)-+-{accounts-daemon}(1623)
+           |                       |-{accounts-daemon}(1624)
+           |                       `-{accounts-daemon}(1629)
+           |-avahi-daemon(1398)---avahi-daemon(1525)
+
+=== pgrep -a bash ===
+13599 /usr/bin/bash
+
+=== pidof bash ===
+13599
+
+=== sleep background ===
+started sleep in background
+[1]+  Running                    sleep 300 &
+
+=== pgrep sleep ===
+13773 sleep 300
+
+=== kill the sleep ===
+killed sleep
